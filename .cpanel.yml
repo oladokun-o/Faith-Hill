@@ -2,4 +2,9 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/faithhil/public_html/
-    - /bin/cp -R . $DEPLOYPATH
+    - /bin/cp -R wp-content $DEPLOYPATH
+    - /bin/cp -R wp-includes $DEPLOYPATH
+    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R about.html $DEPLOYPATH
+    - /bin/cp -R contact.html $DEPLOYPATH
+    - /bin/cp -R services.html $DEPLOYPATH
