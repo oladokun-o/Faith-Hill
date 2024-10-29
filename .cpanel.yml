@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
+    - echo "Deployment triggered" > /home/username/public_html/test_deployment.txt
     - export DEPLOYPATH=/home/faithhil/public_html/
     - /bin/cp -R wp-content $DEPLOYPATH
     - /bin/cp -R wp-includes $DEPLOYPATH
